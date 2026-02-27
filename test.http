@@ -1,35 +1,35 @@
-### Create customer
+### Создать клиента
 POST http://localhost:8080/api/customers
 Content-Type: application/json
 
 {
-  "name": "Aliya"
+  "name": "Abylay"
 }
 
-### Create account
+### Создать аккаунт
 POST http://localhost:8080/api/accounts
 Content-Type: application/json
 
 {
-  "customerId": 2,
+  "customerId": 1,
   "balance": 1000
 }
 
-### Get account
+### Получить аккаунт
 GET http://localhost:8080/api/accounts/1
 
-### Deposit
+### Депозит
 POST http://localhost:8080/api/accounts/1/deposit
 Content-Type: application/json
 
 {
-  "amount": 200
+  "amount": 500
 }
 
-### Withdraw
+### Снятие
 POST http://localhost:8080/api/accounts/1/withdraw
 Content-Type: application/json
 
 {
-  "amount": 150
+  "amount": 200
 }
