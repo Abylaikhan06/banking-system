@@ -1,0 +1,35 @@
+### Create customer
+POST http://localhost:8080/api/customers
+Content-Type: application/json
+
+{
+  "name": "Aliya"
+}
+
+### Create account
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "customerId": 2,
+  "balance": 1000
+}
+
+### Get account
+GET http://localhost:8080/api/accounts/1
+
+### Deposit
+POST http://localhost:8080/api/accounts/1/deposit
+Content-Type: application/json
+
+{
+  "amount": 200
+}
+
+### Withdraw
+POST http://localhost:8080/api/accounts/1/withdraw
+Content-Type: application/json
+
+{
+  "amount": 150
+}
